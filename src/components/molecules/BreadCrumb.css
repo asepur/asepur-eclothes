@@ -1,0 +1,13 @@
+.breadCrumb{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 8px 0;
+  
+    font-size: 12px;
+    color: var(--color-dark-gray);
+  }
+
+  .breadCrumb span:hover{
+    cursor: pointer;
+  }

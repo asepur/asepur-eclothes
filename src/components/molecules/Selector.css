@@ -1,0 +1,44 @@
+
+.bloque__seleccion{
+    width: auto;
+    display: grid;
+    gap: 8px;
+  }
+  
+  .bloque__seleccion .title{
+    font-size: 14px;
+    font-weight: 700;
+  }
+  
+  .seleccionable{
+    display: flex;
+    gap: 10px;
+    width: auto;
+    
+    & div{
+      color: #252C32;
+      cursor: pointer;
+      opacity: 40%;
+      padding: 8px 12px;
+      font-size: 14px;
+      border-radius: 4px;
+      font-weight: 600;
+      
+    }
+  
+    &  div:hover{
+      background-color: var(--color-grey-light);
+      opacity: 1;
+    }
+
+    & div:active{
+      background-color: var(--color-grey-medium);
+    }
+  
+    & .selected, .selected:hover{
+      font-weight: 700;
+      opacity: 1;
+      background-color: var(--color-grey-medium);
+    }
+  }
+  

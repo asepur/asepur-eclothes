@@ -1,0 +1,87 @@
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 20px 0;
+    gap: 20px;
+    
+  }
+
+  /* LAS IMG DE LOS PRODUCTOS */
+
+  /*
+  
+  https://i.ibb.co/CwW9BRT/img-product-1.webp
+  https://i.ibb.co/z8svvRY/img-product-2.webp
+  https://i.ibb.co/n6s3Q3P/img-product-3.webp
+  
+  */
+  
+  
+  .header__logo{
+    color: var(--color-dark-gray);
+    font-size: 32px;
+    margin: 0;
+    cursor: default;
+  }
+  
+  .header__buscador{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    padding: 8px 12px;
+    color: var(--color-dark-gray);
+    font-size: 12px;
+    border-radius: 22px;
+  }
+
+  .header__buscador:hover, .header__buscador:active, .header__buscador:focus-visible, .header__buscador:focus-within{
+    background-color: var(--color-grey-light);
+  }
+
+  .header__buscador input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color: var(--color-dark-gray);
+  }
+
+  .header__buscador input::placeholder{
+    opacity: .8;
+  }
+
+  
+  .header__nav{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header__nav--icon{
+    color: var(--color-dark-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    gap: 4px;
+    margin: 0;
+    cursor: pointer;
+  }
+  
+  .header__nav--icon:hover{
+    background-color:var(--color-grey-light);
+  }
+
+  .header__nav--icon:active{
+    background-color: var(--color-grey-medium);
+  }
+
+  .header__nav--icon span{
+    font-size: 14px;
+    color: var(--color-dark-gray);
+    font-weight: 600;
+  }

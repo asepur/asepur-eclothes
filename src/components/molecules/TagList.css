@@ -1,0 +1,20 @@
+.info__product--tag{
+  display: flex;
+  gap: 20px;
+}
+
+.tags{
+  padding: 0 8px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+}
+
+.tags.new{
+  background-color: var(--color-blue); 
+}
+
+.tags.eco{
+  background-color: var(--color-green); 
+}
