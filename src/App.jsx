@@ -13,11 +13,13 @@ import { faHeart } from '@fortawesome/free-solid-svg-icons';
 
 function App() {
   const [selectedImage, setSelectedImage] = useState('src/assets/images/img-product-1.webp');
+  
   const [selectedColorIndex, setSelectedColorIndex] = useState(0);
+  
   const thumbnails = [
-    'src/assets/images/img-product-1.webp',
-    'src/assets/images/img-product-2.webp',
-    'src/assets/images/img-product-3.webp',
+    { img:'src/assets/images/img-product-1.webp', link: 'https://i.ibb.co/CwW9BRT/img-product-1.webp'},
+    { img: 'src/assets/images/img-product-2.webp', link: 'https://i.ibb.co/z8svvRY/img-product-2.webp'},
+    { img: 'src/assets/images/img-product-3.webp', link: 'https://i.ibb.co/n6s3Q3P/img-product-3.webp'},
   ];
 
   const handleColorChange = (index) => {
