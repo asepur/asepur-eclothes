@@ -19,7 +19,7 @@ function ThumbnailList({ onSelectImage, selectedColorIndex, setSelectedColorInde
             setSelectedColorIndex(index); // Cambia el índice seleccionado en App.jsx
             onSelectImage(thumbnail); // Actualiza la imagen principal
           }}
-          style={{ backgroundImage: `url(${thumbnail})` }}
+          style={{ backgroundImage: `url(${thumbnail.img})` }}
         />
       ))}
     </div>
