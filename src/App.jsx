@@ -10,9 +10,10 @@ import Accordion from './components/molecules/Accordion.jsx';
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import { thumbnails } from './data/thumbnails.js';
 
 function App() {
-  const [selectedImage, setSelectedImage] = useState('https://i.ibb.co/CwW9BRT/img-product-1.webp');
+  const [selectedImage, setSelectedImage] = useState(thumbnails[0].link);
   
   const [selectedColorIndex, setSelectedColorIndex] = useState(0);
 
@@ -20,14 +21,6 @@ function App() {
     setSelectedColorIndex(index);
     setSelectedImage(thumbnails[index]);
   };
-  
-  const thumbnails = [
-    { img:'src/assets/images/img-product-1.webp', link: 'https://i.ibb.co/CwW9BRT/img-product-1.webp'},
-    { img: 'src/assets/images/img-product-2.webp', link: 'https://i.ibb.co/z8svvRY/img-product-2.webp'},
-    { img: 'src/assets/images/img-product-3.webp', link: 'https://i.ibb.co/n6s3Q3P/img-product-3.webp'},
-  ];
-
-  
 
   const [favoriteCount, setFavoriteCount] = useState(0);
   const [isFavorite, setIsFavorite] = useState(0);
@@ -63,7 +56,10 @@ function App() {
             />
 
             <div className='container__img--principal'>
-              <img src={selectedImage?.link || ''} className='content__img--principal' alt="imagen seleccionada" />
+              <img 
+                src={selectedImage} 
+                className='content__img--principal' 
+                alt="imagen seleccionada" />
             </div>
 
             <div className='info__product'>

@@ -1,13 +1,8 @@
 import './ThumbnailList.css';
 import PropTypes from 'prop-types';
+import { thumbnails } from '../../data/thumbnails';
 
 function ThumbnailList({ onSelectImage, selectedColorIndex, setSelectedColorIndex }) {
-  // Array de imágenes para las miniaturas
-  const thumbnails = [
-    { img:'src/assets/images/img-product-1.webp', link: 'https://i.ibb.co/CwW9BRT/img-product-1.webp'},
-    { img: 'src/assets/images/img-product-2.webp', link: 'https://i.ibb.co/z8svvRY/img-product-2.webp'},
-    { img: 'src/assets/images/img-product-3.webp', link: 'https://i.ibb.co/n6s3Q3P/img-product-3.webp'},
-  ];
 
   return (
     <div className="content__thumbnailList">
